@@ -6,3 +6,23 @@
 	--text-grey:  #9DA3AA;
 }
 
+* {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+.sidebar {
+	height: 100%;
+	width: 240px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background: var(--main-color);
+	color: #A7C5D4;
+	padding: 1rem;
+}
