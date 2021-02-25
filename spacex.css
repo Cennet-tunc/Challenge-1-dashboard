@@ -24,5 +24,11 @@
 	z-index: 100;
 	background: var(--main-color);
 	color: #A7C5D4;
-	padding: 1rem;
+}
+
+.sidebar-header {
+	display: flex;
+	justify-content: space-around;
+	align-items: all;
+	height: 100px;
 }
