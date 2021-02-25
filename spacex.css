@@ -1,4 +1,8 @@
-p {
-	color: black;
-	font-family: Verdana;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+	--main-color: #3B2FDD;
+	--color-dark: #232733;
+	--text-grey:  #9DA3AA;
 }
+
