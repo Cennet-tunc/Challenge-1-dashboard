@@ -11,7 +11,7 @@
 	/*Alles in dit lerrertype weergeven, zonder schreef*/
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
-	padding: 0;
+	padding: 0.5px;
 	/*Zonder een decoratie worden weergegeven*/
 	text-decoration: none;
 	/*Geen opsommingstekens of iets*/
@@ -30,7 +30,8 @@
 	/*Achtergrond kleur, staat in root bovenaan*/
 	background: var(--main-color);
 	/*Logo van SpaceX, naam zelf en hamburgermenu in deze kleur weergeven*/
-	color: #A7C5D4;
+	color: #BBE1F3;
+	overflow-y: auto;
 }
 
 .sidebar-header {
@@ -51,5 +52,86 @@
 
 /*Afstand vanaf de onderkant van de tekst, zodat de tekst niet te dicht op elkaar zit*/
 .sidebar li {
-	margin-bottom: 1rem;
+	margin-bottom: 1.3rem;
+}
+
+/*Tekstkleur, overige onder SpaceX en hamburgermenu wit maken, voor een betere leesbaarheid*/
+.sidebar a {
+	color: #FFFFFF;
+	/*Lettergrootte*/
+	font-size: 1rem;
+}
+
+/*Kleine afstand tussen icoon en bijbehorende tekst*/
+.sidebar a span:last-child {
+	padding-left: 0.6rem;
+}
+
+.main-content {
+	position: relative;
+	margin-left: 240px;
+}
+
+header {
+	/*Op zelfde plek blijven, ongeacht of er wordt gescrold of niet*/
+	position: fixed;
+	z-index: 100;
+	/*Breedte, van totale scherm nog 240px van af halen (van het menu) dat die daar bovenaan staat*/
+	width: calc(100% - 240px);
+	/*Achtergrondkleur wit*/
+	background: white;
+	left: 240px;
+	height: 60px;
+	/*Op een bepaalde manier zetten, waardoor ze netjes staan en niet rommelig door elkaar heen*/
+	display: flex;
+	padding: 0rem 1rem;
+	align-items: center;
+	/*Gelijkmatige ruimte tussen onderdelen*/
+	justify-content: space-between;
+	/*Onderkant van de border een zwarte lijn van 1px*/
+	border-bottom: 1px solid black;
+}
+
+.search-wrapper {
+	/*Op een bepaalde manier zetten, waardoor ze netjes staan en niet rommelig door elkaar heen*/
+	display: flex;
+	align-items: center;
+}
+
+/*Geen randen of iets, enkel invuloptie met placeholder die zichtbaar is*/
+.search-wrapper input {
+	border: 0;
+	outline: 0;
+	padding: 1rem;
+	height: 38px;
+}
+
+.social-icons {
+	/*Op een bepaalde manier zetten, waardoor ze netjes staan en niet rommelig door elkaar heen*/
+	display: flex;
+	align-items: center;
+}
+
+.social-icons span,
+.social-icons div {
+	margin-left: 1.2rem;
+}
+
+.social-icons div {
+	height: 37px;
+	width: 37px;
+	background-size: cover;
+	/*Achtergrondafbeelding zal niet worden herhaald maar enkel een keer worden weergegeven*/
+	background-repeat: no-repeat;
+	/*Afbeelding rechtsboven van gebruiker*/
+	background-image: url(img/foto.png);
+	border-radius: 50%;
+}
+
+main {
+	margin-top: 60px;
+	/*Achtergrondkleur*/
+	background: #BBDAF5;
+	min-height: 90vh;
+	padding: 1rem;
 }
