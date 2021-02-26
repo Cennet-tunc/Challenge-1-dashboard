@@ -186,3 +186,11 @@ main {
 	color: #243486;
 	font-size: 0.8rem;
 }
+
+.row {
+	/*Afstand aan de bovenkant, zodat het niet te dicht op mekaar is*/
+	margin-top: 70px;
+	/*Meer naar links*/
+	margin-right: 20px;
+}
+

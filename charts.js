@@ -31,9 +31,9 @@ let chart1 = new Chart(myChart1, {
 // Variabelen die in het grafiek worden weergegeven
 let labels2 = ['Canned beans', 'Dried apricot', 'Canned salmon', 'Unsalted nuts'];
 // Hoeveelheid die beschikbaar is
-let data2 = [4000, 5000, 3000, 5500];
+let data2 = [1250, 1340, 999, 1400];
 // De kleuren van de hoeveelheden 
-let colors2 = ['#B8639B', '#9D4147', '#E7ED4E', '#733BD5' ];
+let colors2 = ['#B8639B', '#9D4147', '#DDDD12', '#733BD5' ];
 
 // Dit wordt gepakt uit het html document
 let myChart2 = document.getElementById("myChart2").getContext('2d');

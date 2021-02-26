@@ -74,8 +74,6 @@
 				<div class="social-icons">
 					<!-- icon overgenomen (ti-...), zie link rel -->
 					<span class="ti-comment"></span>
-					<!-- icon overgenomen (ti-...), zie link rel -->
-					<span class="ti-bell"></span>
 					<div></div>
 				</div>
 			</header>
@@ -118,14 +116,19 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
+				<!-- Doughnut en bar naast elkaar -->
+				<div class="row">
+					<div class="col-6 chart">
+						<canvas id="myChart"></canvas>
+					</div>
+				<div class="col-6 chart">
+					<canvas id="myChart2"></canvas>
+				</div>
+				</div>
+					<!-- Verwijzing naar javascript bestand -->
+					<script src="charts.js"></script>
 			</main>
-
 		</div>
-		<canvas id="myChart"></canvas>
-		<canvas id="myChart2"></canvas>
-		<script src="charts.js"></script>
-
 	</body>
 </html>
