@@ -26,3 +26,37 @@ let chart1 = new Chart(myChart1, {
 		}
 	}
 });
+
+
+// Variabelen die in het grafiek worden weergegeven
+let labels2 = ['Canned beans', 'Dried apricot', 'Canned salmon', 'Unsalted nuts'];
+// Hoeveelheid die beschikbaar is
+let data2 = [4000, 5000, 3000, 5500];
+// De kleuren van de hoeveelheden 
+let colors2 = ['#B8639B', '#9D4147', '#E7ED4E', '#733BD5' ];
+
+// Dit wordt gepakt uit het html document
+let myChart2 = document.getElementById("myChart2").getContext('2d');
+
+let chart2 = new Chart(myChart2, {
+	// Zal worden weergegeven als een bar
+	type: 'bar',
+	data: {
+		labels: labels2,
+		datasets: [ {
+			data: data2,
+			backgroundColor: colors2
+		}]
+	},
+	options: {
+		title: {
+			// Koptitel boven bar
+			text: "Number of food present",
+			display: true
+		},
+		legend: {
+			// Zodat titel boven de bar verschijnt zonder een icoon of iets erbij
+			display: false
+		}
+	}
+});
