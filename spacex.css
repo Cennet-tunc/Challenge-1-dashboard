@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+/*Algemene kleuren, eenmalig hier zetten en later namen ervan overnemen bij aparte tussencodes*/
 :root {
 	--main-color: #3B2FDD;
 	--color-dark: #232733;
@@ -7,13 +8,17 @@
 }
 
 * {
+	/*Alles in dit lerrertype weergeven, zonder schreef*/
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
+	/*Zonder een decoratie worden weergegeven*/
 	text-decoration: none;
+	/*Geen opsommingstekens of iets*/
 	list-style-type: none;
 	box-sizing: border-box;
 }
+
 
 .sidebar {
 	height: 100%;
@@ -22,13 +27,29 @@
 	left: 0;
 	top: 0;
 	z-index: 100;
+	/*Achtergrond kleur, staat in root bovenaan*/
 	background: var(--main-color);
+	/*Logo van SpaceX, naam zelf en hamburgermenu in deze kleur weergeven*/
 	color: #A7C5D4;
 }
 
 .sidebar-header {
+	/*Op een bepaalde manier zetten, waardoor ze netjes staan en niet rommelig door elkaar heen*/
 	display: flex;
-	justify-content: space-around;
-	align-items: all;
-	height: 100px;
+	/*Gelijkmatige tussenruimte SpaceX en hamburgermenu bovenaan de sidebar*/
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	/*Kleine afstand van einde van de sidebar, zodat het er netjes binnen blijft en niet kruist met de uiteindes van de sidebar*/
+	padding: 0rem 1rem;
+}
+
+/*Het menu die zich in de sidebar bevindt, een leeg ruimte creeeren vanaf de zijkant, zodat het niet geplakt is aan de rand*/
+.sidebar-menu {
+	padding: 1rem;
+}
+
+/*Afstand vanaf de onderkant van de tekst, zodat de tekst niet te dicht op elkaar zit*/
+.sidebar li {
+	margin-bottom: 1rem;
 }
