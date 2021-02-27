@@ -10,6 +10,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 	</head>
 	<body>
+		<input type="checkbox" id="sidebar-toggle">
 		<!-- Aparte div voor het menu aan de linkerkant -->
 		<div class="sidebar">
 			<!-- Aparte div voor de header van het menu zelf aan de zijkant -->
@@ -20,7 +21,7 @@
 					<span>SpaceX</span>
 				</h3> 
 				<!-- icon overgenomen (ti-...), zie link rel -->
-				<span class="ti-menu"></span>
+				<label for="sidebar-toggle" class="ti-menu"></label>
 			</div>
 			<!-- Aparte div, voor zijkant (menu), opties voor gebruikers -->
 			<div class="sidebar-menu">
@@ -69,12 +70,6 @@
 					<span class="ti-search"></span>
 					<!-- Hier kan iets worden ingevuld, placeholder geeft al aan dat er hier naar iets gezocht kan worden zo nodig -->
 					<input type="search" placeholder="Search">
-				</div>
-				<!-- Aparte div voor de icons -->
-				<div class="social-icons">
-					<!-- icon overgenomen (ti-...), zie link rel -->
-					<span class="ti-comment"></span>
-					<div></div>
 				</div>
 			</header>
 			<!-- In het midden van de website -->

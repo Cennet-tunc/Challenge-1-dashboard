@@ -11,6 +11,7 @@ let myChart1 = document.getElementById("myChart").getContext('2d');
 let chart1 = new Chart(myChart1, {
 	// Zal worden weergegeven als een doughnut
 	type: 'doughnut',
+	// gegevens van hierboven worden eruit gehaald en erin verwerkt
 	data: {
 		labels: labels1,
 		datasets: [ {
@@ -41,6 +42,7 @@ let myChart2 = document.getElementById("myChart2").getContext('2d');
 let chart2 = new Chart(myChart2, {
 	// Zal worden weergegeven als een bar
 	type: 'bar',
+	// Gegevens van hierboven worden eruit gehaald en erin verwerkt
 	data: {
 		labels: labels2,
 		datasets: [ {
