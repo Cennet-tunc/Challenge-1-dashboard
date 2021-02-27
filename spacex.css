@@ -90,10 +90,12 @@ body {
 	justify-content: center;
 }
 
+/*Zodra op hamburgermenu wordt geklikt, search enz. naar links*/
 #sidebar-toggle:checked ~ .main-content {
 	margin-left: 60px;
 }
 
+/*Zodra op hamburgermenu wordt geklikt, naar links gaan*/
 #sidebar-toggle:checked ~ .main-content header {
 	left: 60px;
 }
@@ -138,17 +140,6 @@ header {
 	outline: 0;
 	padding: 1rem;
 	height: 38px;
-}
-
-.social-icons {
-	/*Op een bepaalde manier zetten, waardoor ze netjes staan en niet rommelig door elkaar heen*/
-	display: flex;
-	align-items: center;
-}
-
-.social-icons span,
-.social-icons div {
-	margin-left: 1.2rem;
 }
 
 main {
