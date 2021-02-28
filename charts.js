@@ -28,7 +28,6 @@ let chart1 = new Chart(myChart1, {
 	}
 });
 
-
 // Variabelen die in het grafiek worden weergegeven
 let labels2 = ['Canned beans', 'Dried apricot', 'Canned salmon', 'Unsalted nuts'];
 // Hoeveelheid die beschikbaar is
