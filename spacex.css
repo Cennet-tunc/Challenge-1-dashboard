@@ -274,20 +274,28 @@ main {
 	}
 
 	.row {
-		display: block;
-		margin-top: 1rem;
+		width: 100%;
 
 	}
 
 	.row canvas {
-		margin-bottom: 1rem;
+		display: block;
+		margin: 0px auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 }
 
+/*Mobiel*/
 @media only screen and (max-width: 480px) {
+
+	h2 {
+		font-size: 20px;
+	}
+
 	.dashboard-above {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 3fr;
 	}
 
 	.cards-view {
@@ -295,14 +303,14 @@ main {
 	}
 
 	.row {
-		display: block;
-		margin-top: 1rem;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);		
 
 	}
 
 	.row canvas {
-		margin-bottom: 1rem;
+		margin-top: 1rem;
 	}
 
-	
+
 }
